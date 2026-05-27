@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Dinámico UI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="contenedor-principal">
+
+        <!-- PANEL SUPERIOR -->
+        <div class="top-bar">
+            <h1><i class="fa-solid fa-calendar-days"></i> Calendario Inteligente</h1>
+
+            <div class="controles">
+                <button id="btnAnterior">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <button id="btnHoy">
+                    Hoy
+                </button>
+
+                <button id="btnSiguiente">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- INFORMACIÓN -->
+        <div class="info-extra">
+            <p id="fechaActualTexto"></p>
+        </div>
+
+        <!-- CALENDARIO -->
+        <div class="calendario-wrapper">
+
+            <div class="cabecera-mes">
+                <h2 id="nombreMes"></h2>
+            </div>
+
+            <div class="dias-semana">
+                <div>Dom</div>
+                <div>Lun</div>
+                <div>Mar</div>
+                <div>Mié</div>
+                <div>Jue</div>
+                <div>Vie</div>
+                <div>Sáb</div>
+            </div>
+
+            <div id="contenedorDias" class="calendario-grid">
+            </div>
+
+        </div>
+
+        <!-- PANEL EVENTOS -->
+        <div class="panel-eventos">
+           
+
+            <div id="listaEventos"></div>
+        </div>
+
+ 
+
+    <script src="js/principal.js"></script>
+
+</body>
+</html>
